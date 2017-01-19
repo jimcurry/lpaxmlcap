@@ -1,0 +1,22 @@
+Create a repository folder under your project
+${project.basedir}/src/main/resources/repo
+
+Install your jars, don't run in power shell
+mvn install:install-file -Dfile=CAM_AAA_CustomIF.jar -DgroupId=com.cognos.cam_aaa -DartifactId=authentication -Dversion=11.0.5 -Dpackaging=jar -DlocalRepositoryPath=/Users/Jim/IdeaProjects/lpaxmlcap/src/main/resources/repo
+
+Add the repo and definitions to the pom.xml
+
+<repositories>
+    <repository>
+        <id>project-repo</id>
+        <url>file://${project.basedir}/src/main/resources/repo</url>
+    </repository>
+</repositories>
+
+<dependencies>
+    <dependency>
+        <groupId>[GROUP]</groupId>
+        <artifactId>[ARTIFACT]</artifactId>
+        <version>[VERS]</version>
+    </dependency>
+</dependencies>

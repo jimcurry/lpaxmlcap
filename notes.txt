@@ -1,0 +1,22 @@
+To add CAM_AAA_CustomIF.jar to maven repository
+
+mvn install:install-file -Dfile=CAM_AAA_CustomIF.jar -DgroupId=com.cognos.cam_aaa -DartifactId=authentication -Dversion=11.0.5 -Dpackaging=jar -DlocalRepositoryPath=/Users/Jim/IdeaProjects/lpaxmlcap/src/main/resources/repo
+mvn install:install-file "-Dfile=CAM_AAA_CustomIF_srcs.jar" "-DgroupId=com.cognos.cam_aaa" "-DartifactId=authentication" "-Dversion=11.0.5" "-Dclassifier=sources" "-Dpackaging=jar" -DlocalRepositoryPath=/Users/Jim/IdeaProjects/lpaxmlcap/src/main/resources/repo
+mvn install:install-file "-Dfile=CAM_AAA_CustomIF_javadoc.jar" "-DgroupId=com.cognos.cam_aaa" "-DartifactId=authentication" "-Dversion=11.0.5" "-Dclassifier=javadoc" "-Dpackaging=jar" -DlocalRepositoryPath=/Users/Jim/IdeaProjects/lpaxmlcap/src/main/resources/repo
+
+
+adapters are unchanged (except for package name) from sdk_install_dir\java\AuthenticationProvider\adapters
+
+To deploy copy jar to install_location/webapps/p2pd/WEB-INF/lib directory.
+Xml file should be placed in the install_location/configuration directory
+Ensure that the name contains the namespaceID to be 
+       recognized (namespaceID is case sensitive).
+       Ex:
+          namespaceID = Sample1 
+          configuration file = lpacap_accounts_Sample1.xml
+          file name always starts with lpacap_accounts_
+          
+com.lpa.lpaxmlcap.LpaXmlCap - is the name of the class to enter in cognos configuration
+
+To publish your project sources on GitHub
+On the main menu, choose VCS | Import into Version Control | Share Project on GitHub.

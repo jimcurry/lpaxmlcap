@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Users>
+	<User userName="jcurry" password="password" givenName="Jim" surname="Curry" email="jim.curry@lpa.com" businessPhone="555-123-4567" faxPhone="555-123-4567" homePhone="555-987-6543" mobilePhone="555-586-7896"
+		pagerPhone="555-984-2557" postalAddress="123 Main St. Rochester NY, 14615">
+		<Groups>
+			<GroupName>Admin</GroupName>
+			<GroupName>IT</GroupName>
+		</Groups>
+		<Roles>
+			<RoleName>System</RoleName>
+			<RoleName>Author</RoleName>
+		</Roles>
+	</User>
+	<User userName="apond" password="password" givenName="Amy" surname="Pond" email="amy.pond@lpa.com" businessPhone="555-123-4567" faxPhone="555-123-4567" homePhone="555-987-6543" mobilePhone="555-586-7896"
+		pagerPhone="555-984-2557" postalAddress="123 Main St. Albany NY, 12354" custom1="abc">
+		<Groups>
+			<GroupName>Admin</GroupName>
+			<GroupName>IT</GroupName>
+		</Groups>
+		<Roles>
+			<RoleName>System</RoleName>
+			<RoleName>Author</RoleName>
+		</Roles>
+	</User>
+	<User userName="unittest" password="password" givenName="Amy" surname="Pond" email="amy.pond@lpa.com" businessPhone="555-123-4567" faxPhone="555-123-4567" homePhone="555-987-6543" mobilePhone="555-586-7896"
+		pagerPhone="555-984-2557" postalAddress="123 Main St. Albany NY, 12354" custom1="abc">
+		<Groups>
+			<GroupName>Admin</GroupName>
+			<GroupName>IT</GroupName>
+		</Groups>
+		<Roles>
+			<RoleName>System</RoleName>
+			<RoleName>Author</RoleName>
+		</Roles>
+	</User>
+	<CustomProperties>
+		<CustomProperty>custom1</CustomProperty>
+		<CustomProperty>custom2</CustomProperty>
+	</CustomProperties>
+</Users>
